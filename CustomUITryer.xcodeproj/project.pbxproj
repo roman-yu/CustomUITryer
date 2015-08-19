@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08467848A04958CC515E77EE /* libPods-CustomUITryer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60005A8518E51F93BF70699A /* libPods-CustomUITryer.a */; };
+		306D504D1B7B48450025E5D7 /* BPRTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 306D504C1B7B48450025E5D7 /* BPRTTabBar.m */; };
+		306D50521B7B4CB40025E5D7 /* BDConstraintButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 306D50511B7B4CB40025E5D7 /* BDConstraintButton.m */; };
+		30AFA5F11B818780006738F2 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AFA5F01B818780006738F2 /* FontViewController.m */; };
+		30AFA5F21B819C28006738F2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30AFA5ED1B8186A3006738F2 /* Lato-Bold.ttf */; };
+		30AFA5F31B819C28006738F2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30AFA5EE1B8186A3006738F2 /* Lato-Regular.ttf */; };
+		30AFA5F41B819C28006738F2 /* PTSans-NarrowBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30AFA5EB1B81868F006738F2 /* PTSans-NarrowBold.ttf */; };
+		30AFA5F51B819C28006738F2 /* PTSans-Narrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30AFA5EC1B81868F006738F2 /* PTSans-Narrow.ttf */; };
+		30AFA5F81B81D829006738F2 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AFA5F71B81D829006738F2 /* CalendarViewController.m */; };
 		30D96C571B7491BB007718FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D96C561B7491BB007718FC /* main.m */; };
 		30D96C5A1B7491BB007718FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D96C591B7491BB007718FC /* AppDelegate.m */; };
 		30D96C5D1B7491BB007718FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D96C5C1B7491BB007718FC /* ViewController.m */; };
@@ -14,6 +23,8 @@
 		30D96C621B7491BB007718FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D96C611B7491BB007718FC /* Images.xcassets */; };
 		30D96C651B7491BB007718FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30D96C631B7491BB007718FC /* LaunchScreen.xib */; };
 		30D96C711B7491BB007718FC /* CustomUITryerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D96C701B7491BB007718FC /* CustomUITryerTests.m */; };
+		30D96C7C1B7491F3007718FC /* VFSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D96C7B1B7491F3007718FC /* VFSNavigationBar.m */; };
+		30D96C7F1B749898007718FC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D96C7E1B749898007718FC /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15F14269D638BC938DE02953 /* Pods-CustomUITryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUITryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomUITryer/Pods-CustomUITryer.release.xcconfig"; sourceTree = "<group>"; };
+		306D504B1B7B48450025E5D7 /* BPRTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTTabBar.h; sourceTree = "<group>"; };
+		306D504C1B7B48450025E5D7 /* BPRTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTTabBar.m; sourceTree = "<group>"; };
+		306D504F1B7B49A00025E5D7 /* CustomUITryer_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUITryer_PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		306D50501B7B4CB40025E5D7 /* BDConstraintButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDConstraintButton.h; sourceTree = "<group>"; };
+		306D50511B7B4CB40025E5D7 /* BDConstraintButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDConstraintButton.m; sourceTree = "<group>"; };
+		30AFA5EB1B81868F006738F2 /* PTSans-NarrowBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-NarrowBold.ttf"; sourceTree = "<group>"; };
+		30AFA5EC1B81868F006738F2 /* PTSans-Narrow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-Narrow.ttf"; sourceTree = "<group>"; };
+		30AFA5ED1B8186A3006738F2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		30AFA5EE1B8186A3006738F2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		30AFA5EF1B818780006738F2 /* FontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
+		30AFA5F01B818780006738F2 /* FontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
+		30AFA5F61B81D829006738F2 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		30AFA5F71B81D829006738F2 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		30D96C511B7491BB007718FC /* CustomUITryer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUITryer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D96C551B7491BB007718FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D96C561B7491BB007718FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +65,12 @@
 		30D96C6A1B7491BB007718FC /* CustomUITryerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomUITryerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D96C6F1B7491BB007718FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D96C701B7491BB007718FC /* CustomUITryerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUITryerTests.m; sourceTree = "<group>"; };
+		30D96C7A1B7491F3007718FC /* VFSNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFSNavigationBar.h; sourceTree = "<group>"; };
+		30D96C7B1B7491F3007718FC /* VFSNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFSNavigationBar.m; sourceTree = "<group>"; };
+		30D96C7D1B749898007718FC /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		30D96C7E1B749898007718FC /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		60005A8518E51F93BF70699A /* libPods-CustomUITryer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomUITryer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783162DDCD78D04ECEDD5F1A /* Pods-CustomUITryer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUITryer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomUITryer/Pods-CustomUITryer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08467848A04958CC515E77EE /* libPods-CustomUITryer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +92,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306D504A1B7B48230025E5D7 /* BPRTTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				306D504B1B7B48450025E5D7 /* BPRTTabBar.h */,
+				306D504C1B7B48450025E5D7 /* BPRTTabBar.m */,
+				306D50501B7B4CB40025E5D7 /* BDConstraintButton.h */,
+				306D50511B7B4CB40025E5D7 /* BDConstraintButton.m */,
+			);
+			path = BPRTTabBar;
+			sourceTree = "<group>";
+		};
+		30AFA5E71B81864E006738F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30AFA5EA1B81866D006738F2 /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30AFA5EA1B81866D006738F2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				30AFA5ED1B8186A3006738F2 /* Lato-Bold.ttf */,
+				30AFA5EE1B8186A3006738F2 /* Lato-Regular.ttf */,
+				30AFA5EB1B81868F006738F2 /* PTSans-NarrowBold.ttf */,
+				30AFA5EC1B81868F006738F2 /* PTSans-Narrow.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		30D96C481B7491BB007718FC = {
 			isa = PBXGroup;
 			children = (
 				30D96C531B7491BB007718FC /* CustomUITryer */,
 				30D96C6D1B7491BB007718FC /* CustomUITryerTests */,
 				30D96C521B7491BB007718FC /* Products */,
+				86A6FD40D2F244ED3389AB7E /* Pods */,
+				CD2F9B8DD6B7CD6744D9809A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +145,23 @@
 		30D96C531B7491BB007718FC /* CustomUITryer */ = {
 			isa = PBXGroup;
 			children = (
+				306D504A1B7B48230025E5D7 /* BPRTTabBar */,
 				30D96C581B7491BB007718FC /* AppDelegate.h */,
 				30D96C591B7491BB007718FC /* AppDelegate.m */,
 				30D96C5B1B7491BB007718FC /* ViewController.h */,
 				30D96C5C1B7491BB007718FC /* ViewController.m */,
+				30D96C7D1B749898007718FC /* FirstViewController.h */,
+				30D96C7E1B749898007718FC /* FirstViewController.m */,
+				30AFA5EF1B818780006738F2 /* FontViewController.h */,
+				30AFA5F01B818780006738F2 /* FontViewController.m */,
+				30AFA5F61B81D829006738F2 /* CalendarViewController.h */,
+				30AFA5F71B81D829006738F2 /* CalendarViewController.m */,
+				30D96C7A1B7491F3007718FC /* VFSNavigationBar.h */,
+				30D96C7B1B7491F3007718FC /* VFSNavigationBar.m */,
 				30D96C5E1B7491BB007718FC /* Main.storyboard */,
 				30D96C611B7491BB007718FC /* Images.xcassets */,
 				30D96C631B7491BB007718FC /* LaunchScreen.xib */,
+				30AFA5E71B81864E006738F2 /* Resources */,
 				30D96C541B7491BB007718FC /* Supporting Files */,
 			);
 			path = CustomUITryer;
@@ -96,6 +170,7 @@
 		30D96C541B7491BB007718FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				306D504F1B7B49A00025E5D7 /* CustomUITryer_PrefixHeader.pch */,
 				30D96C551B7491BB007718FC /* Info.plist */,
 				30D96C561B7491BB007718FC /* main.m */,
 			);
@@ -119,6 +194,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		86A6FD40D2F244ED3389AB7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				783162DDCD78D04ECEDD5F1A /* Pods-CustomUITryer.debug.xcconfig */,
+				15F14269D638BC938DE02953 /* Pods-CustomUITryer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD2F9B8DD6B7CD6744D9809A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60005A8518E51F93BF70699A /* libPods-CustomUITryer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D96C741B7491BB007718FC /* Build configuration list for PBXNativeTarget "CustomUITryer" */;
 			buildPhases = (
+				4C1675CF522DCA044267B96F /* Check Pods Manifest.lock */,
 				30D96C4D1B7491BB007718FC /* Sources */,
 				30D96C4E1B7491BB007718FC /* Frameworks */,
 				30D96C4F1B7491BB007718FC /* Resources */,
+				A1EC5160612A6D312D76E59B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AFA5F21B819C28006738F2 /* Lato-Bold.ttf in Resources */,
+				30AFA5F31B819C28006738F2 /* Lato-Regular.ttf in Resources */,
+				30AFA5F41B819C28006738F2 /* PTSans-NarrowBold.ttf in Resources */,
+				30AFA5F51B819C28006738F2 /* PTSans-Narrow.ttf in Resources */,
 				30D96C601B7491BB007718FC /* Main.storyboard in Resources */,
 				30D96C651B7491BB007718FC /* LaunchScreen.xib in Resources */,
 				30D96C621B7491BB007718FC /* Images.xcassets in Resources */,
@@ -214,12 +312,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C1675CF522DCA044267B96F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EC5160612A6D312D76E59B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomUITryer/Pods-CustomUITryer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30D96C4D1B7491BB007718FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				30D96C5D1B7491BB007718FC /* ViewController.m in Sources */,
+				30AFA5F81B81D829006738F2 /* CalendarViewController.m in Sources */,
+				306D504D1B7B48450025E5D7 /* BPRTTabBar.m in Sources */,
+				30D96C7C1B7491F3007718FC /* VFSNavigationBar.m in Sources */,
+				30D96C7F1B749898007718FC /* FirstViewController.m in Sources */,
+				306D50521B7B4CB40025E5D7 /* BDConstraintButton.m in Sources */,
+				30AFA5F11B818780006738F2 /* FontViewController.m in Sources */,
 				30D96C5A1B7491BB007718FC /* AppDelegate.m in Sources */,
 				30D96C571B7491BB007718FC /* main.m in Sources */,
 			);
@@ -345,21 +482,29 @@
 		};
 		30D96C751B7491BB007718FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 783162DDCD78D04ECEDD5F1A /* Pods-CustomUITryer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./CustomUITryer_PrefixHeader.pch;
 				INFOPLIST_FILE = CustomUITryer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		30D96C761B7491BB007718FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F14269D638BC938DE02953 /* Pods-CustomUITryer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./CustomUITryer_PrefixHeader.pch;
 				INFOPLIST_FILE = CustomUITryer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -416,6 +561,7 @@
 				30D96C761B7491BB007718FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30D96C771B7491BB007718FC /* Build configuration list for PBXNativeTarget "CustomUITryerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +570,7 @@
 				30D96C791B7491BB007718FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

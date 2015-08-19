@@ -1,0 +1,17 @@
+//
+//  CustomUITryer_PrefixHeader.pch
+//  CustomUITryer
+//
+//  Created by Chen YU on 12/8/15.
+//  Copyright (c) 2015 Chen YU. All rights reserved.
+//
+
+#ifndef CustomUITryer_CustomUITryer_PrefixHeader_pch
+#define CustomUITryer_CustomUITryer_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <PureLayout.h>
+
+#endif

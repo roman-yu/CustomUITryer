@@ -1,0 +1,16 @@
+PODS:
+  - CHTCollectionViewWaterfallLayout (0.9.1)
+  - FSCalendar (0.9.3)
+  - PureLayout (2.0.6)
+
+DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout
+  - FSCalendar
+  - PureLayout
+
+SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: 1a8da4fc662702cbddda8926ced266036a829f84
+  FSCalendar: 82450e266009a3f564c83417744a17620a1284d1
+  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
+
+COCOAPODS: 0.38.0
