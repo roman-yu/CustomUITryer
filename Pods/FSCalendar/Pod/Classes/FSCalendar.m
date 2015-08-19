@@ -646,7 +646,7 @@
 #pragma mark - BDHeatmapCalendarHeaderDelegate
 
 - (void)heatmapCalendarHeaderDidSelectToday:(BDHeatmapCalendarHeader *)header {
-    [self setCurrentDate:[NSDate date]];
+    [self scrollToDate:[NSDate date] animate:YES];
 }
 
 - (void)heatmapCalendarHeader:(BDHeatmapCalendarHeader *)header selectMonth:(NSDate *)date {
