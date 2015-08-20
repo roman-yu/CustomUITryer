@@ -30,24 +30,22 @@ static const CGFloat buttonSize = 40.0;
         _dateLabel.text = @"April 2015";
         [self addSubview:_dateLabel];
         
-        UIColor *cyan = [UIColor cyanColor];
-        
         _todayButton = [UIButton new];
-        _todayButton.backgroundColor = cyan;
+        _todayButton.backgroundColor = [UIColor clearColor];
         [_todayButton setTitle:@"Today" forState:UIControlStateNormal];
         [_todayButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_todayButton addTarget:self action:@selector(gotoToday:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_todayButton];
         
         _prevMonthButton = [UIButton new];
-        _prevMonthButton.backgroundColor = cyan;
+        _prevMonthButton.backgroundColor = [UIColor clearColor];
         [_prevMonthButton setTitle:@"<" forState:UIControlStateNormal];
         [_prevMonthButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_prevMonthButton addTarget:self action:@selector(gotoPrevMonth:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_prevMonthButton];
         
         _nextMonthButton = [UIButton new];
-        _nextMonthButton.backgroundColor = cyan;
+        _nextMonthButton.backgroundColor = [UIColor clearColor];
         [_nextMonthButton setTitle:@">" forState:UIControlStateNormal];
         [_nextMonthButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_nextMonthButton addTarget:self action:@selector(gotoNextMonth:) forControlEvents:UIControlEventTouchUpInside];
@@ -64,10 +62,19 @@ static const CGFloat buttonSize = 40.0;
     self.dateLabel.frame = CGRectMake(30, 15, 100, 40);
     
     self.nextMonthButton.frame = CGRectMake(self.frame.size.width - 30 - buttonSize, 15, buttonSize, buttonSize);
+    self.nextMonthButton.layer.cornerRadius = buttonSize / 2;
+    self.nextMonthButton.layer.borderWidth = 1.0;
+    self.nextMonthButton.layer.borderColor = [UIColor blackColor].CGColor;
     
     self.prevMonthButton.frame = CGRectMake(self.nextMonthButton.frame.origin.x - horiMargin - buttonSize, 15, buttonSize, buttonSize);
+    self.prevMonthButton.layer.cornerRadius = buttonSize / 2;
+    self.prevMonthButton.layer.borderWidth = 1.0;
+    self.prevMonthButton.layer.borderColor = [UIColor blackColor].CGColor;
     
     self.todayButton.frame = CGRectMake(self.prevMonthButton.frame.origin.x - horiMargin - 80, 15, 80, buttonSize);
+    self.todayButton.layer.cornerRadius = buttonSize / 2;
+    self.todayButton.layer.borderWidth = 1.0;
+    self.todayButton.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
 - (void)gotoToday:(id)sender {

@@ -4,7 +4,7 @@
 target 'CustomUITryer' do
     pod 'PureLayout'
     pod 'CHTCollectionViewWaterfallLayout'
-    pod 'FSCalendar', :git => 'https://github.com/roman-yu/FSCalendar'
+    pod 'FSCalendar', :git => 'https://github.com/roman-yu/FSCalendar', :branch => 'master'
 end
 
 target 'CustomUITryerTests' do

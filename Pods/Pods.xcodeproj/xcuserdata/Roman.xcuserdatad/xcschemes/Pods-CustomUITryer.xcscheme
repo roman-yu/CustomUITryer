@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC5E5E00E4518A2BB6F353CA"
+               BlueprintIdentifier = "99D908990C1A9500FDBEB2C8"
                BuildableName = "libPods-CustomUITryer.a"
                BlueprintName = "Pods-CustomUITryer"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -5,16 +5,17 @@ PODS:
 
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout
-  - FSCalendar (from `https://github.com/roman-yu/FSCalendar`)
+  - FSCalendar (from `https://github.com/roman-yu/FSCalendar`, branch `master`)
   - PureLayout
 
 EXTERNAL SOURCES:
   FSCalendar:
+    :branch: master
     :git: https://github.com/roman-yu/FSCalendar
 
 CHECKOUT OPTIONS:
   FSCalendar:
-    :commit: c6f3ddc3bf8a805598238e93da7928469dc22d42
+    :commit: e3569a48091793ba1821aab23b9e30cd958fc985
     :git: https://github.com/roman-yu/FSCalendar
 
 SPEC CHECKSUMS:
