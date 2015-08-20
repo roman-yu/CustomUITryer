@@ -1,15 +1,16 @@
 //
-//  BDHeatmapCalendarHeader.m
+//  FSCalendarHeatmapHeader.m
 //  CustomUITryer
 //
 //  Created by Chen YU on 19/8/15.
 //  Copyright (c) 2015 Chen YU. All rights reserved.
 //
 
-#import "BDHeatmapCalendarHeader.h"
-#import "PureLayout.h"
+#import "FSCalendarHeatmapHeader.h"
 
-@interface BDHeatmapCalendarHeader ()
+static const CGFloat buttonSize = 40.0;
+
+@interface FSCalendarHeatmapHeader ()
 
 @property (nonatomic, strong) UILabel *dateLabel;
 @property (nonatomic, strong) UIButton *todayButton;
@@ -18,7 +19,7 @@
 
 @end
 
-@implementation BDHeatmapCalendarHeader
+@implementation FSCalendarHeatmapHeader
 
 - (instancetype)initWithDate:(NSDate *)date {
     if (self = [super initWithFrame:CGRectZero]) {
@@ -30,7 +31,6 @@
         [self addSubview:_dateLabel];
         
         UIColor *cyan = [UIColor cyanColor];
-        UIColor *red = [UIColor redColor];
         
         _todayButton = [UIButton new];
         _todayButton.backgroundColor = cyan;
@@ -56,40 +56,28 @@
     return self;
 }
 
-- (void)updateConstraints {
+- (void)layoutSubviews {
+    [super layoutSubviews];
     
-    self.layoutMargins = UIEdgeInsetsMake(15, 30, 15, 30);
+    static CGFloat horiMargin = 10.0;
     
-    [self.dateLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeRight];
+    self.dateLabel.frame = CGRectMake(30, 15, 100, 40);
     
-//    [self.nextMonthButton autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeLeft];
+    self.nextMonthButton.frame = CGRectMake(self.frame.size.width - 30 - buttonSize, 15, buttonSize, buttonSize);
     
-//    [@[self.todayButton, self.prevMonthButton, self.nextMonthButton] autoDistributeViewsAlongAxis:ALAxisBaseline alignedTo:ALAttributeBaseline withFixedSpacing:10.f insetSpacing:YES];
+    self.prevMonthButton.frame = CGRectMake(self.nextMonthButton.frame.origin.x - horiMargin - buttonSize, 15, buttonSize, buttonSize);
     
-    [self.nextMonthButton autoPinEdgeToSuperviewMargin:ALEdgeRight];
-    [self.nextMonthButton autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self];
-    [self.nextMonthButton autoSetDimension:ALDimensionWidth toSize:40.f];
-    
-    [self.prevMonthButton autoPinEdge:ALEdgeRight toEdge:ALEdgeLeft ofView:self.nextMonthButton withOffset:-10.f];
-    [self.prevMonthButton autoSetDimension:ALDimensionWidth toSize:40.f];
-    
-    [self.todayButton autoPinEdge:ALEdgeRight toEdge:ALEdgeLeft ofView:self.prevMonthButton withOffset:-10.f];
-    [self.todayButton autoSetDimension:ALDimensionWidth toSize:80.0];
-    
-    [@[self.todayButton, self.prevMonthButton, self.nextMonthButton] autoAlignViewsToAxis:ALAxisHorizontal];
-    [@[self.todayButton, self.prevMonthButton, self.nextMonthButton] autoMatchViewsDimension:ALDimensionHeight];
-    
-    [super updateConstraints];
+    self.todayButton.frame = CGRectMake(self.prevMonthButton.frame.origin.x - horiMargin - 80, 15, 80, buttonSize);
 }
 
 - (void)gotoToday:(id)sender {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(heatmapCalendarHeaderDidSelectToday:)]) {
-        [self.delegate heatmapCalendarHeaderDidSelectToday:self];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(calendarHeatmapHeaderDidSelectToday:)]) {
+        [self.delegate calendarHeatmapHeaderDidSelectToday:self];
     }
 }
 
 - (void)gotoPrevMonth:(id)sender {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(heatmapCalendarHeader:selectMonth:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(calendarHeatmapHeader:selectMonth:)]) {
         NSDateComponents *components = [[NSCalendar currentCalendar] components:(NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:self.displayedDate];
         if (components.month == 1) {
             components.month = 12;
@@ -99,12 +87,12 @@
         }
         components.day = 15;
         self.displayedDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-        [self.delegate heatmapCalendarHeader:self selectMonth:self.displayedDate];
+        [self.delegate calendarHeatmapHeader:self selectMonth:self.displayedDate];
     }
 }
 
 - (void)gotoNextMonth:(id)sender {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(heatmapCalendarHeader:selectMonth:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(calendarHeatmapHeader:selectMonth:)]) {
         NSDateComponents *components = [[NSCalendar currentCalendar] components:(NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:self.displayedDate];
         if (components.month == 12) {
             components.month = 1;
@@ -113,8 +101,12 @@
             components.month += 1;
         }
         self.displayedDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-        [self.delegate heatmapCalendarHeader:self selectMonth:self.displayedDate];
+        [self.delegate calendarHeatmapHeader:self selectMonth:self.displayedDate];
     }
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
 }
 
 @end

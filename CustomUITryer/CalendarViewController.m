@@ -35,7 +35,7 @@
     self.view.layer.borderColor = [UIColor magentaColor].CGColor;
     
     // In loadView or viewDidLoad
-    FSCalendar *calendar = [FSCalendar new];
+    FSCalendar *calendar = [[FSCalendar alloc] initWithFrame:CGRectZero headerType:FSCalendarHeaderTypeHeatmap];
     calendar.dataSource = self;
     calendar.delegate = self;
 //    calendar.firstWeekday = 2;

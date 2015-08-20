@@ -14,22 +14,6 @@
 
 #define kAnimationDuration 0.15
 
-@interface FSCalendarCell ()
-
-@property (weak, nonatomic) CAShapeLayer *backgroundLayer;
-@property (weak, nonatomic) CAShapeLayer *eventLayer;
-@property (weak, nonatomic) CALayer      *imageLayer;
-
-@property (readonly, nonatomic) BOOL         today;
-@property (readonly, nonatomic) BOOL         weekend;
-@property (readonly, nonatomic) FSCalendar   *calendar;
-
-@property (assign,   nonatomic) BOOL         deselecting;
-
-- (UIColor *)colorForCurrentStateInDictionary:(NSDictionary *)dictionary;
-
-@end
-
 @implementation FSCalendarCell
 
 #pragma mark - Init and life cycle
@@ -80,11 +64,10 @@
     [super setBounds:bounds];
     CGFloat titleHeight = self.bounds.size.height*5.0/6.0;
     CGFloat diameter = MIN(self.bounds.size.height*5.0/6.0,self.bounds.size.width);
-//    _backgroundLayer.frame = CGRectMake((self.bounds.size.width-diameter)/2,
-//                                        (titleHeight-diameter)/2,
-//                                        diameter,
-//                                        diameter);
-    _backgroundLayer.frame = bounds;
+    _backgroundLayer.frame = CGRectMake((self.bounds.size.width-diameter)/2,
+                                        (titleHeight-diameter)/2,
+                                        diameter,
+                                        diameter);
     
     CGFloat eventSize = _backgroundLayer.frame.size.height/6.0;
     _eventLayer.frame = CGRectMake((_backgroundLayer.frame.size.width-eventSize)/2+_backgroundLayer.frame.origin.x, CGRectGetMaxY(_backgroundLayer.frame)+eventSize*0.2, eventSize*0.8, eventSize*0.8);
@@ -142,9 +125,9 @@
 
 - (void)configureCell
 {
-    _titleLabel.font = _appearance.titleFont;
+    _titleLabel.font = [UIFont systemFontOfSize:_appearance.titleTextSize];
     _titleLabel.text = [NSString stringWithFormat:@"%@",@(_date.fs_day)];
-    _subtitleLabel.font = _appearance.subtitleFont;
+    _subtitleLabel.font = [UIFont systemFontOfSize:_appearance.subtitleTextSize];
     _subtitleLabel.text = _subtitle;
     _titleLabel.textColor = [self colorForCurrentStateInDictionary:_appearance.titleColors];
     _subtitleLabel.textColor = [self colorForCurrentStateInDictionary:_appearance.subtitleColors];
@@ -165,7 +148,7 @@
                                           self.fs_width,
                                           subtitleHeight);
     } else {
-        _titleLabel.frame = CGRectMake(0, 0, self.fs_width, floor(self.contentView.fs_height));
+        _titleLabel.frame = CGRectMake(0, 0, self.fs_width, floor(self.contentView.fs_height*5.0/6.0));
         _subtitleLabel.hidden = YES;
     }
     _backgroundLayer.hidden = !self.selected && !self.isToday;
@@ -192,7 +175,7 @@
 
 - (BOOL)isToday
 {
-    return [_date fs_isEqualToDateForDay:self.calendar.currentDate];
+    return [_date fs_isEqualToDateForDay:self.calendar.today];
 }
 
 - (BOOL)isWeekend
@@ -227,3 +210,6 @@
 }
 
 @end
+
+
+

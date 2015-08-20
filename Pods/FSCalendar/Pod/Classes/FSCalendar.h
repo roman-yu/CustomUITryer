@@ -11,15 +11,15 @@
 
 @class FSCalendar;
 
-#ifndef IBInspectable
-#define IBInspectable
-#endif
-
 typedef NS_ENUM(NSInteger, FSCalendarFlow) {
     FSCalendarFlowVertical ,
     FSCalendarFlowHorizontal
 };
 
+typedef NS_ENUM(NSInteger, FSCalendarHeaderType) {
+    FSCalendarHeaderTypeDefault,
+    FSCalendarHeaderTypeHeatmap
+};
 
 typedef NS_ENUM(NSInteger, FSCalendarCellState) {
     FSCalendarCellStateNormal      = 0,
@@ -50,15 +50,16 @@ typedef NS_ENUM(NSInteger, FSCalendarCellState) {
 
 @end
 
-
+IB_DESIGNABLE
 @interface FSCalendar : UIView
 
 @property (weak, nonatomic) IBOutlet id<FSCalendarDelegate>   delegate;
 @property (weak, nonatomic) IBOutlet id<FSCalendarDataSource> dataSource;
 
-@property (strong, nonatomic) NSDate *currentDate;
+@property (strong, nonatomic) NSDate *today;
 @property (strong, nonatomic) NSDate *selectedDate;
 @property (strong, nonatomic) NSDate *currentMonth;
+@property (strong, nonatomic) NSLocale *locale;
 
 @property (assign, nonatomic) FSCalendarFlow flow;
 @property (assign, nonatomic) IBInspectable NSUInteger firstWeekday;
@@ -67,6 +68,8 @@ typedef NS_ENUM(NSInteger, FSCalendarCellState) {
 @property (readonly, nonatomic) FSCalendarAppearance *appearance;
 @property (readonly, nonatomic) NSDate *minimumDate;
 @property (readonly, nonatomic) NSDate *maximumDate;
+
+- (instancetype)initWithFrame:(CGRect)frame headerType:(FSCalendarHeaderType)headerType;
 
 - (void)reloadData;
 - (void)setSelectedDate:(NSDate *)selectedDate animate:(BOOL)animate;

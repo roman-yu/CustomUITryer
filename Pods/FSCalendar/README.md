@@ -24,7 +24,7 @@
 2. After adjust the position and frame, link the `dataSource` and `delegate` to the ViewController <br/>
 3. Implement `FSCalendarDataSource` and `FSCalendarDelegate` in ViewController.m
 
-### Use code
+### Code
 
 ```objective-c
 @property (weak , nonatomic) FSCalendar *calendar;
@@ -40,6 +40,9 @@ self.calendar = calendar;
 <br/>
 
 ### Or swift
+
+* To use `FSCalendar` in swift, you need to [Create Bridge Header](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) first.
+
 
 ```swift
 private weak var calendar: FSCalendar!
@@ -285,8 +288,25 @@ func calendarCurrentMonthDidChange(calendar: FSCalendar!) {
 #### `FSCalendar` can be used on `iPad`.
 ![fscalendar-ipad](https://cloud.githubusercontent.com/assets/5186464/6502151/b4ce3092-c35b-11e4-827a-498d73579d78.jpg)
 
+#### Roll with Interface Builder
+
+![fscalendar - ibdesignable](https://cloud.githubusercontent.com/assets/5186464/9301716/2e76a2ca-4503-11e5-8450-1fa7aa93e9fd.gif)
+
+* This feature requires iOS7+ and Xcode6+, but if you use `cocoapods`, it requires `iOS8+` and `use_frameworks!`, for example:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod "FSCalendar"
+```
+
+* `fakeSubtitles` and `fakedSelectedDay` is only used for preview in Interface Builder
+
+
 ## Requirements
-ios 7.0
+ios 7.0, Xcode 6+
 
 ## Known issues
 * The title size changed as we change frame size of FSCalendar: Automatically adjusting font size based on frame size is default behavior of FSCalendadr, to disable it:
