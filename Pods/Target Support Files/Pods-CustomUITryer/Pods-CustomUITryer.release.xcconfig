@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CHTCollectionViewWaterfallLayout" "${PODS_ROOT}/Headers/Public/FSCalendar" "${PODS_ROOT}/Headers/Public/PureLayout"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CHTCollectionViewWaterfallLayout" -isystem "${PODS_ROOT}/Headers/Public/FSCalendar" -isystem "${PODS_ROOT}/Headers/Public/PureLayout"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"CHTCollectionViewWaterfallLayout" -l"FSCalendar" -l"PureLayout" -framework "QuartzCore" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AWFileHash" "${PODS_ROOT}/Headers/Public/CHTCollectionViewWaterfallLayout" "${PODS_ROOT}/Headers/Public/FSCalendar" "${PODS_ROOT}/Headers/Public/PureLayout"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AWFileHash" -isystem "${PODS_ROOT}/Headers/Public/CHTCollectionViewWaterfallLayout" -isystem "${PODS_ROOT}/Headers/Public/FSCalendar" -isystem "${PODS_ROOT}/Headers/Public/PureLayout"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AWFileHash" -l"CHTCollectionViewWaterfallLayout" -l"FSCalendar" -l"PureLayout" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "Foundation" -framework "Photos" -framework "QuartzCore" -framework "Security" -framework "UIKit"
 PODS_ROOT = ${SRCROOT}/Pods

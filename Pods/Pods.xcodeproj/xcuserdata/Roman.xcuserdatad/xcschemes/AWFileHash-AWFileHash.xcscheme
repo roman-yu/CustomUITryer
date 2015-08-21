@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A669C1D6F24AF25CA0ECD98"
-               BuildableName = "libPods-CustomUITryer.a"
-               BlueprintName = "Pods-CustomUITryer"
+               BlueprintIdentifier = "DD2A60CEFD3F912674F27ABF"
+               BuildableName = "AWFileHash.bundle"
+               BlueprintName = "AWFileHash-AWFileHash"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

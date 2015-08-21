@@ -5,6 +5,7 @@ target 'CustomUITryer' do
     pod 'PureLayout'
     pod 'CHTCollectionViewWaterfallLayout'
     pod 'FSCalendar'
+    pod "AWFileHash"
 end
 
 target 'CustomUITryerTests' do

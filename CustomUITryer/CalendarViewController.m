@@ -8,6 +8,8 @@
 
 #import "CalendarViewController.h"
 #import "FSCalendar.h"
+#import "SHA512.h"
+#import <AWFileHash/AWFileHash.h>
 
 @interface CalendarViewController () <FSCalendarDelegate, FSCalendarDataSource>
 
@@ -19,6 +21,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /********** SHA512 **********/
+    NSString *psdSalt = @"comebackfRLVP1aApYNAh3skw9U1";
+    for (int i=0; i<20; i++) {
+        psdSalt = [self recursiveHashed:psdSalt];
+    }
+    NSLog(@"20 times hashed psdSalt = %@", psdSalt);
+    
+    SHA512 *sha512 = [SHA512 sha512WithString:@"comeback"];
+    
+    // Print the MD5 digest value as string.
+    // This will show "md5 = 080aef839b95facf73ec599375e92d47".
+    NSLog(@"sha512 = %@", sha512);
+    
+    // Another way to compute.
+    sha512 = [[SHA512 alloc] init];
+    [sha512 updateWithString:@"Hello, world."];
+    [sha512 final];
+    NSLog(@"sha512 = %@", sha512);
+    /********** SHA512 **********/
+    
     
     static NSInteger totalLength = 20;
     
@@ -62,6 +85,11 @@
     });
     
 //    [self oneMonth];
+}
+
+- (NSString *)recursiveHashed:(NSString *)string {
+    NSData *unencryptedData = [string dataUsingEncoding:NSUTF8StringEncoding];
+    return [AWFileHash sha512HashOfData:unencryptedData];
 }
 
 - (NSArray *)oneMonth {

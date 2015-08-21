@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C0467E20CEF7B747832B0141"
+               BlueprintIdentifier = "89774EBE5DB3DDE80B83BAE3"
                BuildableName = "libCHTCollectionViewWaterfallLayout.a"
                BlueprintName = "CHTCollectionViewWaterfallLayout"
                ReferencedContainer = "container:Pods.xcodeproj">
