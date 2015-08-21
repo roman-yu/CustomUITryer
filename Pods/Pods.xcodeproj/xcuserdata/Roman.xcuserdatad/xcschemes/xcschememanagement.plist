@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AWFileHash-AWFileHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWFileHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CHTCollectionViewWaterfallLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0283B55EB66B5CF26996DD6C044C2EE8</key>
+		<key>1D6EDBE83D4E25C7F1BFDB280DF8DCEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E2C065EF1B2B99A9B84A4381D2F4096</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6616A127138D110A85FFC105E45B3B6F</key>
+		<key>6E2FA24917D2F23EF9799ACD645DDCBD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D68C0B0AEB3976F660568CC3B225DA16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2D87C392E92EE5B72B92301A4359B2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA3E813209A30F38CBF091DC06DD5C6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F92078C3D6B46B91889E59665F836A51</key>
 		<dict>
 			<key>primary</key>
 			<true/>

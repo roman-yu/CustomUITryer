@@ -1,0 +1,1 @@
+AWFILEHASH_OTHER_LDFLAGS = -framework "AssetsLibrary" -framework "CoreFoundation" -framework "Foundation" -framework "Photos" -framework "Security"

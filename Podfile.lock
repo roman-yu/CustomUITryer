@@ -1,24 +1,17 @@
 PODS:
+  - AWFileHash (0.1.0)
   - CHTCollectionViewWaterfallLayout (0.9.1)
   - FSCalendar (0.11.2)
   - PureLayout (2.0.6)
 
 DEPENDENCIES:
+  - AWFileHash
   - CHTCollectionViewWaterfallLayout
-  - FSCalendar (from `https://github.com/roman-yu/FSCalendar`, branch `master`)
+  - FSCalendar
   - PureLayout
 
-EXTERNAL SOURCES:
-  FSCalendar:
-    :branch: master
-    :git: https://github.com/roman-yu/FSCalendar
-
-CHECKOUT OPTIONS:
-  FSCalendar:
-    :commit: e3569a48091793ba1821aab23b9e30cd958fc985
-    :git: https://github.com/roman-yu/FSCalendar
-
 SPEC CHECKSUMS:
+  AWFileHash: e9acc164dd6813cfd32df276e53bcda27a095100
   CHTCollectionViewWaterfallLayout: 1a8da4fc662702cbddda8926ced266036a829f84
   FSCalendar: c66e75adde90d6e6fa5f7ee04caf46277ad5b2c1
   PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d

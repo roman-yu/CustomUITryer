@@ -1,0 +1,1 @@
+../../../AWFileHash/Pod/Classes/AWFileHash.h

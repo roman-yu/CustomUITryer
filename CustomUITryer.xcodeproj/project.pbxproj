@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08467848A04958CC515E77EE /* libPods-CustomUITryer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60005A8518E51F93BF70699A /* libPods-CustomUITryer.a */; };
+		300995F01B87219200316519 /* MessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 300995ED1B87219200316519 /* MessageDigest.m */; };
+		300995F11B87219200316519 /* SHA512.m in Sources */ = {isa = PBXBuildFile; fileRef = 300995EF1B87219200316519 /* SHA512.m */; };
 		306D504D1B7B48450025E5D7 /* BPRTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 306D504C1B7B48450025E5D7 /* BPRTTabBar.m */; };
 		306D50521B7B4CB40025E5D7 /* BDConstraintButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 306D50511B7B4CB40025E5D7 /* BDConstraintButton.m */; };
 		30AFA5F11B818780006738F2 /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AFA5F01B818780006738F2 /* FontViewController.m */; };
@@ -39,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		15F14269D638BC938DE02953 /* Pods-CustomUITryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUITryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomUITryer/Pods-CustomUITryer.release.xcconfig"; sourceTree = "<group>"; };
+		300995EC1B87219200316519 /* MessageDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDigest.h; sourceTree = "<group>"; };
+		300995ED1B87219200316519 /* MessageDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDigest.m; sourceTree = "<group>"; };
+		300995EE1B87219200316519 /* SHA512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA512.h; sourceTree = "<group>"; };
+		300995EF1B87219200316519 /* SHA512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA512.m; sourceTree = "<group>"; };
 		306D504B1B7B48450025E5D7 /* BPRTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTTabBar.h; sourceTree = "<group>"; };
 		306D504C1B7B48450025E5D7 /* BPRTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTTabBar.m; sourceTree = "<group>"; };
 		306D504F1B7B49A00025E5D7 /* CustomUITryer_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUITryer_PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
@@ -92,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300995EB1B87217700316519 /* Digest */ = {
+			isa = PBXGroup;
+			children = (
+				300995EC1B87219200316519 /* MessageDigest.h */,
+				300995ED1B87219200316519 /* MessageDigest.m */,
+				300995EE1B87219200316519 /* SHA512.h */,
+				300995EF1B87219200316519 /* SHA512.m */,
+			);
+			path = Digest;
+			sourceTree = "<group>";
+		};
 		306D504A1B7B48230025E5D7 /* BPRTTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +162,7 @@
 		30D96C531B7491BB007718FC /* CustomUITryer */ = {
 			isa = PBXGroup;
 			children = (
+				300995EB1B87217700316519 /* Digest */,
 				306D504A1B7B48230025E5D7 /* BPRTTabBar */,
 				30D96C581B7491BB007718FC /* AppDelegate.h */,
 				30D96C591B7491BB007718FC /* AppDelegate.m */,
@@ -353,12 +371,14 @@
 				30D96C5D1B7491BB007718FC /* ViewController.m in Sources */,
 				30AFA5F81B81D829006738F2 /* CalendarViewController.m in Sources */,
 				306D504D1B7B48450025E5D7 /* BPRTTabBar.m in Sources */,
+				300995F01B87219200316519 /* MessageDigest.m in Sources */,
 				30D96C7C1B7491F3007718FC /* VFSNavigationBar.m in Sources */,
 				30D96C7F1B749898007718FC /* FirstViewController.m in Sources */,
 				306D50521B7B4CB40025E5D7 /* BDConstraintButton.m in Sources */,
 				30AFA5F11B818780006738F2 /* FontViewController.m in Sources */,
 				30D96C5A1B7491BB007718FC /* AppDelegate.m in Sources */,
 				30D96C571B7491BB007718FC /* main.m in Sources */,
+				300995F11B87219200316519 /* SHA512.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
